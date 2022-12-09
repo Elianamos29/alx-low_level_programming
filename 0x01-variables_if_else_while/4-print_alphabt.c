@@ -11,7 +11,7 @@ int main(void)
 
 	for (lower = 'a'; lower <= 'z'; lower++)
 	{
-		if (lower == 'e' or lower == 'q')
+		if (lower == 'e' || lower == 'q')
 			continue;
 		putchar(lower);
 	}
