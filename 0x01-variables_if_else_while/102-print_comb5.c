@@ -19,7 +19,7 @@ int main(void)
 			putchar((num2 / 10) + '0');
 			putchar((num2 % 10) + '0');
 
-			if ((i == 98) && (k == 99))
+			if ((num == 98) && (num2 == 99))
 				break;
 			putchar(',');
 			putchar(' ');
