@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print combination of single digit numbers
+ * main - print combination of single digit numbers and for 3 digit
  * Return: Always 0 (Success)
  */
 
@@ -17,6 +17,7 @@ int main(void)
 			{
 				putchar(num);
 				putchar(num2);
+				putchar(num3);
 				if (num == 55 && num2 == 56 && num3 == 57)
 					break;
 				putchar(',');
