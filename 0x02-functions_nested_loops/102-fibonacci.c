@@ -15,10 +15,10 @@ int main(void)
 	printf("%ld, ", secondn);
 	for (i = 3; i < 50; i++)
 	{
-		thirdn = firstn + secondn;
 		printf("%ld ,", thirdn);
 		firstn = secondn;
 		secondn = thirdn;
+		thirdn = firstn + secondn;
 	}
 	printf("%ld\n", thirdn);
 	return (0);
