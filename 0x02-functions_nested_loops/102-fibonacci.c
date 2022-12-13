@@ -11,6 +11,7 @@ int main(void)
 
 	firstn = 1;
 	secondn = 2;
+	thirdn = 3;
 	printf("%ld, ", firstn);
 	printf("%ld, ", secondn);
 	for (i = 3; i < 50; i++)
