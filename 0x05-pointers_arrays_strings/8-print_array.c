@@ -4,6 +4,7 @@
 /**
  * print_array - prints n elements of an array of integers
  * followed by a new line
+ * @n: elements
  * @a: array to be printed
  */
 
