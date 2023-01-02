@@ -19,7 +19,6 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*accept == *s)
 			{
-				j++;
 				i = 1;
 				break;
 			}
@@ -27,8 +26,10 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		s++;
 		accept = ptr;
-		if (i == 0)
-			break;
+		if (i == 1)
+			j++;
+		else
+			return (j);
 	}
 
 	return (j);
