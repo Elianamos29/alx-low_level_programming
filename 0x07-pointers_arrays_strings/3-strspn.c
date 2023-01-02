@@ -14,6 +14,11 @@ unsigned int _strspn(char *s, char *accept)
 
 	while(*s)
 	{
+		if (*s == ' ')
+		{
+			break;
+		}
+
 		i = 0;
 		while (*accept)
 		{
