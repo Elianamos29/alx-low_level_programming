@@ -7,17 +7,25 @@
  * @size: size of matrix
  * Return: void
  */
-
-void print_diagsums(int *a, int size)
+void print_diagsum(int *a, int size)
 {
-	int i, sum1 = 0, sum2 = 0;
+	int i = 0;
+	int value = 0;
+	int sum, sum2;
 
-	for (i = 0; i < (size * size); i++)
+	sum = sum2 = 0;
+	while (i < (size * size))
 	{
-		if (i % (size + 1) == 0)
-			sum1 += *(a + i);
-		if (i % (size - 1) == 0 && i != 0 && i < size * size - 1)
-			sum2 += *(a + i);
+		value = *(a + i);
+		sum = sum + value;
+		i = i + size + 1;
 	}
-	printf("%d, %d\n", sum1, sum2);
+	i = size - 1;
+	while (i < ((size * size) - 1))
+	{
+		value = *(a + i);
+		sum2 = sum2 + value;
+		i = i + (size - 1);
+	}
+	printf("%d, %d\n", sum, sum2);
 }
